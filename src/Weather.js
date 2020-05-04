@@ -15,7 +15,7 @@ class Weather extends React.Component{
 
     fetchData = (cityName) => {
         const key = 'fcbd0b49aeaedc2399b10f80545ae74a';
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric`;
         console.log(url)
         axios.get(url).then((res) =>{
             console.log(res);
